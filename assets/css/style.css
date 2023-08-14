@@ -22,9 +22,12 @@ a:hover {
   color: #4F58A6;
   text-decoration: none;
 }
+h1, h2 {
+  font-family: "Krona One";
+}
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Krona One", "Poppins";
+h3, h4, h5, h6 {
+  font-family: "Poppins";
 }
 
 /*--------------------------------------------------------------
@@ -136,6 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 90%;
 }
 .nav-menu > ul > li {
   position: relative;
@@ -147,9 +151,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   padding: 12px 15px;
   margin-bottom: 8px;
-  transition: 0.3s;
   font-size: 15px;
   font-weight: 600;
+  transition: 0.3s;
+  border-radius: 0  20px 20px 0;
 }
 .nav-menu a i, .nav-menu a:focus i {
   font-size: 24px;
@@ -158,10 +163,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
   text-decoration: none;
-  color: #4F58A6;
+  color: white;
+  background-image: linear-gradient(to right, #242849, #4F58A6);
+  border-radius: 0  20px 20px 0;
+  opacity: 0.8;
 }
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-  color: #4F58A6;
+  color: white;
 }
 
 /* Mobile Navigation */
@@ -345,31 +353,25 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .skills .tech-skills {
-  height: 230px;
+  height: 270px;
   display: block;
   background: none;
   padding: 15px;
   border-radius: 20px;
   margin: 20px;
   background-color: white;
-  text-align: center;
+  text-align: start;
+  list-style: none;
+  font-size: 30px;
 }
-.skills .tech-skills .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Poppins";
-  color: white;
+
+.skills .tech-skills img {
+  max-width: 30px;
 }
-.skills .tech-skills .skill .val {
-  float: right;
-  font-style: normal;
-}
-.skills .icon img {
-  height: 140px;
+
+
+.skills .tech-skills li {
+  margin: 0 0 13px 10px;
 }
 
 /*--------------------------------------------------------------
@@ -464,6 +466,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-radius: 13px;
 }
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -822,6 +825,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  border-radius: 10px;
 }
 .contact .php-email-form input {
   height: 44px;
